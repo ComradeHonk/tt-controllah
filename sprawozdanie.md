@@ -14,6 +14,7 @@ Zakres projektu obejmuje funkcjonalności związane z tworzeniem i konfiguracją
 Projekt obejmuje także funkcje przeglądania harmonogramu, sprawdzania wyników oraz informowania uczestników o nadchodzących meczach i zmianach organizacyjnych. System ma wspierać organizatora w nadzorowaniu przebiegu zawodów oraz zapewniać uczestnikom szybki dostęp do aktualnych informacji.
 
 # 2. Cel, zakres, kontekst i korzyści
+
 ## 2.1 Cel budowania systemu
 
 Celem projektowanego systemu jest stworzenie narzędzia informatycznego wspierającego planowanie oraz zarządzanie zawodami w tenisa stołowego. 
@@ -21,7 +22,9 @@ Celem projektowanego systemu jest stworzenie narzędzia informatycznego wspieraj
 System ma umożliwiać sprawną organizację turniejów poprzez automatyzację kluczowych procesów, takich jak rejestracja zawodników, tworzenie harmonogramu rozgrywek, zarządzanie meczami oraz publikacja wyników. Głównym założeniem jest eliminacja problemów wynikających z ręcznego zarządzania zawodami (np. błędów w harmonogramie, opóźnień, braku aktualnych informacji), a także zwiększenie przejrzystości i efektywności organizacyjnej.
 
 ## 2.2. Zakres systemu
+
 ### 2.2.1 Zakres funkcjonalny
+
 **System obejmuje następujące funkcjonalności:**
 
 - tworzenie i konfiguracja turniejów (np. typ rozgrywek, liczba stołów),
@@ -53,3 +56,53 @@ System funkcjonuje jako centralna platforma wspierająca organizację turnieju.
 4. System powiadomień – wysyła komunikaty do użytkowników  
 
 System może współpracować z zewnętrznymi usługami (np. e-mail/SMS) w celu realizacji powiadomień.
+
+# 3. Słownik
+
+**Turniej**<br>
+Zdarzenie sportowe obejmujące zestaw rozgrywek pomiędzy zawodnikami według określonego systemu.
+
+**Zawodnik**<br>
+Osoba biorąca udział w turnieju.
+
+**Klub**<br>
+Jednostka organizacyjna zrzeszająca zawodników.
+
+**Mecz**<br>
+Jednostka rywalizacji pomiędzy dwoma zawodnikami. Składa się z setów.
+
+**Set**<br>
+Część meczu, rozgrywana do określonej liczby punktów (np. 11).
+
+**Punkt**<br>
+Najmniejsza jednostka punktacji przyznawana w trakcie seta.
+
+**Wynik meczu**<br>
+Rezultat meczu wyrażony najczęściej liczbą wygranych setów przez zawodników.
+
+**Faza turnieju**<br>
+Logiczny etap turnieju (np. grupowa, pucharowa).
+
+**Grupa**<br>
+Zbiór zawodników w fazie grupowej, rywalizujących systemem „każdy z każdym”.
+
+**Runda**<br>
+Etap w fazie pucharowej (np. ćwierćfinał, półfinał).
+
+**Drabinka turniejowa**<br>
+Struktura odwzorowująca przebieg fazy pucharowej i zależności między meczami.
+
+**System rozgrywek**<br>
+Zasady organizacji turnieju (np. grupowy, pucharowy, mieszany).
+
+**Ranking**<br>
+Uporządkowana lista zawodników według wyników lub punktów.
+
+**Rozstawienie (seedowanie)**<br>
+Przypisanie zawodników do pozycji startowych w drabince na podstawie rankingu.
+
+**Walkower**<br>
+Specjalny przypadek zakończenia meczu bez rozegrania.
+
+**Stół**<br>
+Zasób fizyczny, na którym rozgrywany jest mecz.
