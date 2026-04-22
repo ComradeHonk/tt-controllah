@@ -57,6 +57,29 @@ System funkcjonuje jako centralna platforma wspierająca organizację turnieju.
 
 System może współpracować z zewnętrznymi usługami (np. e-mail/SMS) w celu realizacji powiadomień.
 
+## 2.4. Przewidywalne mierzalne korzyści
+
+### 2.4.1 Skrócenie czasu przygotowania turnieju
+
+- przed wdrożeniem: 4–6 godzin  
+- po wdrożeniu: ok. 30 minut  
+
+### 2.4.2 Redukcja liczby błędów w harmonogramie / podczas zapisywania użytkowników
+
+- metryka: liczba błędów / turniej  
+- przed: 10–15  
+- po: 0–2  
+
+### 2.4.3 Skrócenie czasu publikacji wyników
+
+- przed: 10–15 minut  
+- po: <10 sekund  
+
+### 2.4.4 Wzrost liczby obsługiwanych zawodników
+
+- przed: 64 zawodników  
+- po: 96 zawodników  
+
 # 3. Słownik
 
 **Turniej**<br>
