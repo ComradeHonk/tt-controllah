@@ -57,7 +57,7 @@ System funkcjonuje jako centralna platforma wspierająca organizację turnieju.
 
 System może współpracować z zewnętrznymi usługami (np. e-mail/SMS) w celu realizacji powiadomień.
 
-## 2.4. Przewidywalne mierzalne korzyści
+## 2.4 Przewidywalne mierzalne korzyści
 
 ### 2.4.1 Skrócenie czasu przygotowania turnieju
 
@@ -79,6 +79,14 @@ System może współpracować z zewnętrznymi usługami (np. e-mail/SMS) w celu 
 
 - przed: 64 zawodników  
 - po: 96 zawodników  
+
+## 2.5 Niemierzalne korzyści
+
+- poprawa organizacji i przejrzystości zawodów,
+- zwiększenie satysfakcji uczestników,
+- lepsza komunikacja między organizatorem a zawodnikami,
+- większy profesjonalizm wydarzenia,
+- łatwiejsze zarządzanie przebiegiem turnieju w czasie rzeczywistym.
 
 # 3. Słownik
 
