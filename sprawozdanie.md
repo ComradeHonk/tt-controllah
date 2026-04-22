@@ -90,50 +90,50 @@ System może współpracować z zewnętrznymi usługami (np. e-mail/SMS) w celu 
 
 # 3. Słownik
 
-**Turniej**<br>
-Zdarzenie sportowe obejmujące zestaw rozgrywek pomiędzy zawodnikami według określonego systemu.
+- **Turniej**<br>
+Zdarzenie sportowe obejmujące zestaw rozgrywek pomiędzy 		zawodnikami według określonego systemu.
 
-**Zawodnik**<br>
+- **Zawodnik**<br>
 Osoba biorąca udział w turnieju.
 
-**Klub**<br>
+- **Klub**<br>
 Jednostka organizacyjna zrzeszająca zawodników.
 
-**Mecz**<br>
+- **Mecz**<br>
 Jednostka rywalizacji pomiędzy dwoma zawodnikami. Składa się z setów.
 
-**Set**<br>
+- **Set**<br>
 Część meczu, rozgrywana do określonej liczby punktów (np. 11).
 
-**Punkt**<br>
+- **Punkt**<br>
 Najmniejsza jednostka punktacji przyznawana w trakcie seta.
 
-**Wynik meczu**<br>
+- **Wynik meczu**<br>
 Rezultat meczu wyrażony najczęściej liczbą wygranych setów przez zawodników.
 
-**Faza turnieju**<br>
+- **Faza turnieju**<br>
 Logiczny etap turnieju (np. grupowa, pucharowa).
 
-**Grupa**<br>
+- **Grupa**<br>
 Zbiór zawodników w fazie grupowej, rywalizujących systemem „każdy z każdym”.
 
-**Runda**<br>
+- **Runda**<br>
 Etap w fazie pucharowej (np. ćwierćfinał, półfinał).
 
-**Drabinka turniejowa**<br>
+- **Drabinka turniejowa**<br>
 Struktura odwzorowująca przebieg fazy pucharowej i zależności między meczami.
 
-**System rozgrywek**<br>
+- **System rozgrywek**<br>
 Zasady organizacji turnieju (np. grupowy, pucharowy, mieszany).
 
-**Ranking**<br>
+- **Ranking**<br>
 Uporządkowana lista zawodników według wyników lub punktów.
 
-**Rozstawienie (seedowanie)**<br>
+- **Rozstawienie (seedowanie)**<br>
 Przypisanie zawodników do pozycji startowych w drabince na podstawie rankingu.
 
-**Walkower**<br>
+- **Walkower**<br>
 Specjalny przypadek zakończenia meczu bez rozegrania.
 
-**Stół**<br>
+- **Stół**<br>
 Zasób fizyczny, na którym rozgrywany jest mecz.
