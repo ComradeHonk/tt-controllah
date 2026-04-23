@@ -9,3 +9,5 @@ Projekt na zajęcia z Inżynierii oprogramowania.
 - Michał Burzyński
 
 **Sprawozdanie projektowe:** [sprawozdanie.md](sprawozdanie.md)
+
+**Propozycja interfejsu użytkownika:** [Bolt.new](https://table-tennis-tournam-feqg.bolt.host/)

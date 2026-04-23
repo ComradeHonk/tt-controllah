@@ -137,3 +137,8 @@ Specjalny przypadek zakończenia meczu bez rozegrania.
 
 - **Stół**<br>
 Zasób fizyczny, na którym rozgrywany jest mecz.
+
+# 5. Perspektywa projektowa
+
+## 5.4. Propozycje interfejsu użytkownika
+**Link do wygenerowanej strony:** [Bolt.new](https://table-tennis-tournam-feqg.bolt.host/)
