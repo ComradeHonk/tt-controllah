@@ -22,7 +22,7 @@ Projekt na zajęcia z Inżynierii oprogramowania.
 - [x] 3. Słownik
 - [ ] 4. Perspektywa przypadków użycia
   - [ ] 4.1. Diagramy przypadków użycia
-    - [ ] 4.1.1. Opisy tekstowe wszystkich aktorów
+    - [x] 4.1.1. Opisy tekstowe wszystkich aktorów
     - [ ] 4.1.2. Opisy tekstowe wszystkich przypadków użycia
   - [ ] 4.2. Diagramy czynności
   - [ ] 4.3. Diagramy interakcji (przebiegu) z opisem tekstowym komunikatów
