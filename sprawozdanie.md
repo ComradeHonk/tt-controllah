@@ -15,7 +15,7 @@ Projekt obejmuje także funkcje przeglądania harmonogramu, sprawdzania wyników
 
 # 2. Cel, zakres, kontekst i korzyści
 
-## 2.1 Cel budowania systemu
+## 2.1. Cel budowania systemu
 
 Celem projektowanego systemu jest stworzenie narzędzia informatycznego wspierającego planowanie oraz zarządzanie zawodami w tenisa stołowego. 
 
@@ -23,7 +23,7 @@ System ma umożliwiać sprawną organizację turniejów poprzez automatyzację k
 
 ## 2.2. Zakres systemu
 
-### 2.2.1 Zakres funkcjonalny
+### 2.2.1. Zakres funkcjonalny
 
 **System obejmuje następujące funkcjonalności:**
 
@@ -38,7 +38,7 @@ System ma umożliwiać sprawną organizację turniejów poprzez automatyzację k
 - wysyłanie powiadomień o meczach i zmianach,
 - generowanie raportów końcowych.
 
-### 2.2.2 Zakres niefunkcjonalny
+### 2.2.2. Zakres niefunkcjonalny
 - dostępność systemu w trakcie zawodów (wysoka niezawodność),
 - czas odpowiedzi systemu poniżej 2 sekund,
 - obsługa wielu użytkowników jednocześnie,
@@ -49,7 +49,7 @@ System ma umożliwiać sprawną organizację turniejów poprzez automatyzację k
 
 System funkcjonuje jako centralna platforma wspierająca organizację turnieju.
 
-### 2.3.1 Aktorzy systemu (4):
+### 2.3.1. Aktorzy systemu (4):
 1. Organizator – zarządza turniejem i jego przebiegiem  
 2. Zawodnik – uczestniczy w zawodach i przegląda informacje  
 3. Sędzia – wprowadza wyniki meczów  
@@ -57,30 +57,30 @@ System funkcjonuje jako centralna platforma wspierająca organizację turnieju.
 
 System może współpracować z zewnętrznymi usługami (np. e-mail/SMS) w celu realizacji powiadomień.
 
-## 2.4 Przewidywalne mierzalne korzyści
+## 2.4. Przewidywalne mierzalne korzyści
 
-### 2.4.1 Skrócenie czasu przygotowania turnieju
+### 2.4.1. Skrócenie czasu przygotowania turnieju
 
 - przed wdrożeniem: 4–6 godzin  
 - po wdrożeniu: ok. 30 minut  
 
-### 2.4.2 Redukcja liczby błędów w harmonogramie / podczas zapisywania użytkowników
+### 2.4.2. Redukcja liczby błędów w harmonogramie / podczas zapisywania użytkowników
 
 - metryka: liczba błędów / turniej  
 - przed: 10–15  
 - po: 0–2  
 
-### 2.4.3 Skrócenie czasu publikacji wyników
+### 2.4.3. Skrócenie czasu publikacji wyników
 
 - przed: 10–15 minut  
 - po: <10 sekund  
 
-### 2.4.4 Wzrost liczby obsługiwanych zawodników
+### 2.4.4. Wzrost liczby obsługiwanych zawodników
 
 - przed: 64 zawodników  
 - po: 96 zawodników  
 
-## 2.5 Niemierzalne korzyści
+## 2.5. Niemierzalne korzyści
 
 - poprawa organizacji i przejrzystości zawodów,
 - zwiększenie satysfakcji uczestników,
@@ -137,6 +137,28 @@ Specjalny przypadek zakończenia meczu bez rozegrania.
 
 - **Stół**<br>
 Zasób fizyczny, na którym rozgrywany jest mecz.
+
+# 4. Perspektywa przypadków użycia
+
+## 4.1. Diagram przypadków użycia
+
+### 4.1.1. Opisy tekstowe aktorów
+
+**Organizator**
+
+Organizator to główny użytkownik systemu odpowiedzialny za przygotowanie i nadzorowanie przebiegu turnieju. Tworzy i konfiguruje zawody, określając ich parametry (np. typ rozgrywek, liczba stołów), zarządza listą zawodników oraz inicjuje generowanie drabinek i harmonogramu meczów. W trakcie turnieju monitoruje jego przebieg, wprowadza ewentualne zmiany organizacyjne i dba o poprawność oraz aktualność danych. Ma najszersze uprawnienia w systemie.
+
+**Zawodnik**
+
+Zawodnik to uczestnik turnieju, który korzysta z systemu głównie w celu uzyskania informacji. Może zarejestrować się do zawodów, przeglądać harmonogram swoich meczów oraz sprawdzać wyniki i postęp turnieju. Otrzymuje również powiadomienia dotyczące nadchodzących spotkań i zmian organizacyjnych. Jego dostęp do systemu jest ograniczony do funkcji informacyjnych.
+
+**Sędzia**
+
+Sędzia odpowiada za obsługę meczów od strony wyników. Ma dostęp do listy przypisanych mu spotkań i wprowadza ich rezultaty do systemu. Może również zatwierdzać wyniki, co powoduje ich oficjalne uwzględnienie w drabince turniejowej. Jego działania mają bezpośredni wpływ na aktualizację przebiegu rozgrywek, dlatego wymagają odpowiedniej dokładności i terminowości.
+
+**System powiadomień**
+
+System powiadomień to aktor techniczny odpowiedzialny za komunikację z użytkownikami. Automatycznie wysyła informacje o nadchodzących meczach, zmianach w harmonogramie oraz wynikach spotkań za pośrednictwem zewnętrznych usług (np. e-mail lub SMS). Działa w tle i nie wymaga bezpośredniej interakcji ze strony użytkowników, ale odgrywa istotną rolę w zapewnieniu aktualności i dostępności informacji.
 
 # 5. Perspektywa projektowa
 
