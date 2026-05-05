@@ -142,7 +142,7 @@ Zasób fizyczny, na którym rozgrywany jest mecz.
 
 ## 4.1. Diagram przypadków użycia
 
-### 4.1.1. Opisy tekstowe aktorów
+### 4.1.1. Opis aktorów
 
 **Organizator**
 
