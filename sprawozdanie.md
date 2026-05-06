@@ -142,6 +142,8 @@ Zasób fizyczny, na którym rozgrywany jest mecz.
 
 ## 4.1. Diagram przypadków użycia
 
+![Diagram przypadków użycia](./assets/diag_przypadkow_uzycia_dark.png)
+
 ### 4.1.1. Opis aktorów
 
 **Organizator**
