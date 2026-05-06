@@ -206,6 +206,46 @@ d) maksymalny czas realizacji: nieokreślony<br>
 - Zapis w systemie jako uczestnik zawodów,
 - Możliwość udziału w rozgrywkach.
 
+#### **Opis przypadku użycia „Wprowadzanie i zatwierdzanie wyników meczów”**
+
+**1. Uczestniczący aktorzy**
+
+- Sędzia
+
+**2. Podstawowy ciąg zdarzeń**
+
+- System wyświetla listę meczów przypisanych do Sędziego,
+- Sędzia wybiera zakończony mecz,
+- System wyświetla formularz wprowadzania wyniku,
+- Sędzia wprowadza wynik meczu,
+- Sędzia zatwierdza wynik,
+- System weryfikuje poprawność danych (np. format wyniku),
+- System zapisuje wynik w bazie danych,
+- System automatycznie aktualizuje drabinkę turniejową i status rozgrywek,
+- System informuje o poprawnym zapisaniu wyniku.
+
+**3. Alternatywne ciągi zdarzeń**
+
+a) Wprowadzone dane są niepoprawne
+- System wyświetla komunikat o błędzie i wskazuje niepoprawne pola,
+- Sędzia poprawia dane i ponownie zatwierdza wynik,
+
+b) Sędzia rezygnuje z wprowadzania wyniku
+- System przerywa operację bez zapisywania danych.
+
+**4. Zależności czasowe**
+
+a) częstotliwość wykonania: wielokrotnie w trakcie turnieju<br>
+b) przewidywane spiętrzenia: w końcowych fazach turnieju<br>
+c) typowy czas realizacji: ~30 sekund<br>
+d) maksymalny czas realizacji: nieokreślony<br>
+
+**5. Wartości uzyskiwane przez aktora po zakończeniu przypadku użycia**
+
+- Zapisany i zatwierdzony wynik meczu,
+- Aktualizacja drabinki turniejowej,
+- Informacja o poprawnym wykonaniu operacji.
+
 # 5. Perspektywa projektowa
 
 ## 5.4. Propozycje interfejsu użytkownika
