@@ -246,6 +246,44 @@ d) maksymalny czas realizacji: nieokreślony<br>
 - Aktualizacja drabinki turniejowej,
 - Informacja o poprawnym wykonaniu operacji.
 
+#### **Opis przypadku użycia „Generowanie harmonogramu meczów”**
+
+**1. Uczestniczący aktorzy**
+
+- Organizator
+
+**2. Podstawowy ciąg zdarzeń**
+
+- System wyświetla opcję generowania harmonogramu meczów,
+- Organizator wybiera turniej oraz parametry harmonogramu (np. liczba stołów, dostępne przedziały czasowe),
+- System pobiera dane o zawodnikach oraz wygenerowanej drabince turniejowej,
+- System analizuje dostępne zasoby (stoły, czas),
+- System automatycznie generuje harmonogram meczów, przypisując spotkania do stołów i przedziałów czasowych,
+- System zapisuje harmonogram w bazie danych,
+- System wyświetla wygenerowany harmonogram Organizatorowi.
+
+**3. Alternatywne ciągi zdarzeń**
+
+a) Brak wystarczających zasobów (np. za mało stołów lub czasu)
+- System informuje o problemie i sugeruje zmianę parametrów,
+- Organizator modyfikuje dane i ponownie uruchamia generowanie harmonogramu,
+
+b) Organizator rezygnuje z operacji
+- System przerywa proces i wraca do poprzedniego stanu bez zapisywania danych.
+
+**4. Zależności czasowe**
+
+a) częstotliwość wykonania: 1–2 razy na turniej<br>
+b) przewidywane spiętrzenia: przed rozpoczęciem zawodów<br>
+c) typowy czas realizacji: kilka sekund<br>
+d) maksymalny czas realizacji: do kilkunastu sekund<br>
+
+**5. Wartości uzyskiwane przez aktora po zakończeniu przypadku użycia**
+
+- Gotowy harmonogram meczów,
+- Przypisanie spotkań do stołów i godzin,
+- Możliwość dalszego zarządzania turniejem.
+
 # 5. Perspektywa projektowa
 
 ## 5.4. Propozycje interfejsu użytkownika
