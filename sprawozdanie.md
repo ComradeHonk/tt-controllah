@@ -162,6 +162,50 @@ Sędzia odpowiada za obsługę meczów od strony wyników. Ma dostęp do listy p
 
 System powiadomień to aktor techniczny odpowiedzialny za komunikację z użytkownikami. Automatycznie wysyła informacje o nadchodzących meczach, zmianach w harmonogramie oraz wynikach spotkań za pośrednictwem zewnętrznych usług (np. e-mail lub SMS). Działa w tle i nie wymaga bezpośredniej interakcji ze strony użytkowników, ale odgrywa istotną rolę w zapewnieniu aktualności i dostępności informacji.
 
+### 4.1.2. Opisy przypadków użycia
+
+#### **Opis przypadku użycia „Rejestracja zawodnika do turnieju”**
+
+**1. Uczestniczący aktorzy**
+
+- Zawodnik
+
+**2. Podstawowy ciąg zdarzeń**
+
+- System wyświetla formularz rejestracji do turnieju,
+- Zawodnik wprowadza wymagane dane (np. imię, nazwisko, dane kontaktowe),
+- Zawodnik wybiera turniej, do którego chce się zapisać,
+- Zawodnik zatwierdza formularz rejestracyjny,
+- System weryfikuje kompletność i poprawność danych,
+- System sprawdza dostępność miejsc w turnieju,
+- System zapisuje zgłoszenie w bazie danych,
+- System informuje o poprawnym zarejestrowaniu zawodnika.
+
+**3. Alternatywne ciągi zdarzeń**
+
+a) Dane są niekompletne lub niepoprawne
+- System wyświetla formularz ponownie, wskazując błędne pola,
+- Zawodnik poprawia dane i ponownie zatwierdza formularz,
+
+b) Brak wolnych miejsc w turnieju
+- System informuje o braku dostępnych miejsc,
+- Zawodnik może wybrać inny turniej lub anulować operację,
+
+c) Zawodnik rezygnuje z rejestracji
+- System przerywa proces bez zapisywania danych.
+
+**4. Zależności czasowe**
+
+a) częstotliwość wykonania: zależna od liczby uczestników, zwykle kilkanaście–kilkadziesiąt razy na turniej<br>
+b) przewidywane spiętrzenia: przed rozpoczęciem turnieju<br>
+c) typowy czas realizacji: ~1–2 minuty<br>
+d) maksymalny czas realizacji: nieokreślony<br>
+
+**5. Wartości uzyskiwane przez aktora po zakończeniu przypadku użycia**
+- Potwierdzenie rejestracji do turnieju,
+- Zapis w systemie jako uczestnik zawodów,
+- Możliwość udziału w rozgrywkach.
+
 # 5. Perspektywa projektowa
 
 ## 5.4. Propozycje interfejsu użytkownika
