@@ -22,9 +22,9 @@ Projekt na zajęcia z Inżynierii oprogramowania.
 - [x] 2. Cel budowania systemu, jego zakres oraz kontekst, przewidywalne mierzalne i niemierzalne korzyści z jego wdrożenia
 - [x] 3. Słownik
 - [ ] 4. Perspektywa przypadków użycia
-  - [ ] 4.1. Diagramy przypadków użycia
+  - [x] 4.1. Diagramy przypadków użycia
     - [x] 4.1.1. Opisy tekstowe wszystkich aktorów
-    - [ ] 4.1.2. Opisy tekstowe wybranych przypadków użycia
+    - [x] 4.1.2. Opisy tekstowe wybranych przypadków użycia
   - [ ] 4.2. Diagramy czynności
   - [ ] 4.3. Diagramy interakcji (przebiegu) z opisem tekstowym komunikatów
 - [ ] 5. Perspektywa projektowa
