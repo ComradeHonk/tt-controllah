@@ -285,6 +285,221 @@ d) maksymalny czas realizacji: do kilkunastu sekund<br>
 - Możliwość dalszego zarządzania turniejem.
 
 # 5. Perspektywa projektowa
+## 5.1 Diagram klas
+![Diagram klas](./assets/class_diagram.png)
 
+## 5.2 Uporządkowany alfabetycznie wykaz wszystkich klas
+
+#### Bracket
+
+**Opis:**
+
+Klasa odpowiedzialna za reprezentację drabinki turniejowej oraz zarządzanie jej strukturą.
+
+**Atrybuty:**
+
+- `id : int` — unikalny identyfikator drabinki
+- `type : String` — typ drabinki (np. knockout, group)
+- `matches : List<Match>` — lista meczów w drabince
+
+**Metody:**
+
+- `generateBracket()` — generuje strukturę drabinki
+- `updateBracket()` — aktualizuje drabinkę po zakończeniu meczu
+- `getNextMatch()` — zwraca kolejny mecz w drabince
+
+#### Match
+
+**Opis:**
+
+Klasa reprezentująca pojedynczy mecz rozgrywany w turnieju.
+
+**Atrybuty:**
+
+- `id : int` — identyfikator meczu
+- `player1 : Player` — pierwszy zawodnik
+- `player2 : Player` — drugi zawodnik
+- `score : String` — wynik meczu
+- `status : MatchStatus` — status meczu
+- `scheduledTime : DateTime` — zaplanowany czas meczu
+- `table : Table` — przypisany stół
+
+**Metody:**
+
+- `startMatch()` — rozpoczyna mecz
+- `finishMatch()` — kończy mecz
+- `updateScore()` — aktualizuje wynik meczu
+- `assignTable()` — przypisuje stół do meczu
+
+#### Notification
+
+**Opis:**
+
+Klasa odpowiedzialna za reprezentację powiadomień wysyłanych do użytkowników.
+
+**Atrybuty:**
+
+- `id : int` — identyfikator powiadomienia
+- `message : String` — treść powiadomienia
+- `sendDate : DateTime` — data wysłania
+- `recipient : User` — odbiorca powiadomienia
+- `type : NotificationType` — typ powiadomienia
+
+**Metody:**
+
+- `sendNotification()` — wysyła powiadomienie
+- `generateMessage()` — tworzy treść komunikatu
+
+#### NotificationService
+
+**Opis:**
+
+Klasa realizująca wysyłanie powiadomień przez zewnętrzne kanały komunikacji.
+
+**Atrybuty:**
+
+- emailEnabled : boolean — określa dostępność wysyłki e-mail
+- smsEnabled : boolean — określa dostępność wysyłki SMS
+
+**Metody:**
+
+- `sendEmail()` — wysyła wiadomość e-mail
+- `sendSMS()` — wysyła wiadomość SMS
+- `notifyPlayers()` — wysyła powiadomienia do zawodników
+
+#### Organizer
+
+**Opis:**
+
+Klasa reprezentująca organizatora odpowiedzialnego za zarządzanie turniejem.
+
+**Atrybuty:**
+
+- `organizationName : String` — nazwa organizacji
+- `managedTournaments : List<Tournament>` — lista zarządzanych turniejów
+
+**Metody:**
+
+- `createTournament()` — tworzy nowy turniej
+- `generateSchedule()` — uruchamia generowanie harmonogramu
+- `managePlayers()` — zarządza zawodnikami
+- `generateReport()` — generuje raport końcowy
+
+#### Player
+
+**Opis:**
+
+Klasa reprezentująca zawodnika uczestniczącego w turnieju.
+
+**Atrybuty:**
+
+- `ranking : int` — ranking zawodnika
+- `club : String` — klub zawodnika
+- `registeredTournaments : List<Tournament>` — lista turniejów zawodnika
+
+**Metody:**
+
+- `registerForTournament()` — rejestruje zawodnika do turnieju
+- `viewSchedule()` — wyświetla harmonogram meczów
+- `viewResults()` — wyświetla wyniki turnieju
+
+#### Referee
+
+**Opis:**
+
+Klasa reprezentująca sędziego odpowiedzialnego za obsługę wyników meczów.
+
+**Atrybuty:**
+
+- `assignedMatches : List<Match>` — lista przypisanych meczów
+
+**Metody:**
+
+- `enterMatchResult()` — wprowadza wynik meczu
+- `approveResult()` — zatwierdza wynik meczu
+- `viewAssignedMatches()` — wyświetla przypisane mecze
+
+#### Schedule
+
+**Opis:**
+
+Klasa odpowiedzialna za harmonogram rozgrywek turniejowych.
+
+**Atrybuty:**
+
+- `id : int` — identyfikator harmonogramu
+- `matches : List<Match>` — lista zaplanowanych meczów
+- `generatedDate : DateTime` — data wygenerowania harmonogramu
+
+**Metody:**
+
+- `generateSchedule()` — tworzy harmonogram meczów
+- `updateSchedule()` — aktualizuje harmonogram
+- `assignMatchesToTables()` — przypisuje mecze do stołów
+
+#### Table
+
+**Opis:**
+
+Klasa reprezentująca stół do gry wykorzystywany podczas turnieju.
+
+**Atrybuty:**
+
+- `id : int` — identyfikator stołu
+- `number : int` — numer stołu
+- `availabilityStatus : boolean` — dostępność stołu
+
+**Metody:**
+
+- `reserveTable()` — rezerwuje stół
+- `releaseTable()` — zwalnia stół
+- `checkAvailability()` — sprawdza dostępność stołu
+
+#### Tournament
+
+**Opis:**
+
+Klasa reprezentująca turniej tenisa stołowego.
+
+**Atrybuty:**
+
+- `id : int` — identyfikator turnieju
+- `name : String` — nazwa turnieju
+- `type : TournamentType` — typ turnieju
+- `startDate : Date` — data rozpoczęcia
+- `endDate : Date` — data zakończenia
+- `status : TournamentStatus` — status turnieju
+- `players : List<Player>` — lista zawodników
+- `schedule : Schedule` — harmonogram turnieju
+- `bracket : Bracket` — drabinka turniejowa
+
+**Metody:**
+
+- `addPlayer()` — dodaje zawodnika do turnieju
+- `removePlayer()` — usuwa zawodnika z turnieju
+- `startTournament()` — rozpoczyna turniej
+- `finishTournament()` — kończy turniej
+- `generateBracket()` — generuje drabinkę turniejową
+
+#### User
+
+**Opis:**
+
+Klasa bazowa reprezentująca użytkownika systemu.
+
+**Atrybuty:**
+
+- `id : int` — identyfikator użytkownika
+- `firstName : String` — imię użytkownika
+- `lastName : String` — nazwisko użytkownika
+- `email : String` — adres e-mail
+- `phoneNumber : String` — numer telefonu
+- `password : String` — hasło użytkownika
+
+**Metody:**
+
+- `login()` — logowanie użytkownika
+- `logout()` — wylogowanie użytkownika
+- `updateProfile()` — aktualizacja danych użytkownika
 ## 5.4. Propozycje interfejsu użytkownika
 **Link do wygenerowanej strony:** [Bolt.new](https://table-tennis-tournam-feqg.bolt.host/)
