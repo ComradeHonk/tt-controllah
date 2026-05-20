@@ -91,7 +91,7 @@ System może współpracować z zewnętrznymi usługami (np. e-mail/SMS) w celu 
 # 3. Słownik
 
 - **Turniej**<br>
-Zdarzenie sportowe obejmujące zestaw rozgrywek pomiędzy 		zawodnikami według określonego systemu.
+Zdarzenie sportowe obejmujące zestaw rozgrywek pomiędzy zawodnikami według określonego systemu.
 
 - **Zawodnik**<br>
 Osoba biorąca udział w turnieju.
@@ -142,7 +142,7 @@ Zasób fizyczny, na którym rozgrywany jest mecz.
 
 ## 4.1. Diagram przypadków użycia
 
-![Diagram przypadków użycia](./assets/diag_przypadkow_uzycia_dark.png)
+![Diagram przypadków użycia](./assets/use_case_diagram_dark.drawio.png)
 
 ### 4.1.1. Opis aktorów
 
