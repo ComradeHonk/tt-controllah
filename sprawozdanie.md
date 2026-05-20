@@ -164,7 +164,7 @@ System powiadomień to aktor techniczny odpowiedzialny za komunikację z użytko
 
 ### 4.1.2. Opisy przypadków użycia
 
-#### **Opis przypadku użycia „Rejestracja zawodnika do turnieju”**
+#### **Opis przypadku użycia „Rejestracja zawodnika do turnieju”** *(autor: Marcel Alefierowicz)*
 
 **1. Uczestniczący aktorzy**
 
@@ -206,7 +206,7 @@ d) maksymalny czas realizacji: nieokreślony<br>
 - Zapis w systemie jako uczestnik zawodów,
 - Możliwość udziału w rozgrywkach.
 
-#### **Opis przypadku użycia „Wprowadzanie i zatwierdzanie wyników meczów”**
+#### **Opis przypadku użycia „Wprowadzanie i zatwierdzanie wyników meczów”** *(autor: Michał Burzyński)*
 
 **1. Uczestniczący aktorzy**
 
@@ -246,7 +246,7 @@ d) maksymalny czas realizacji: nieokreślony<br>
 - Aktualizacja drabinki turniejowej,
 - Informacja o poprawnym wykonaniu operacji.
 
-#### **Opis przypadku użycia „Generowanie harmonogramu meczów”**
+#### **Opis przypadku użycia „Generowanie harmonogramu meczów”** *(autor: Przemysław Dudek)*
 
 **1. Uczestniczący aktorzy**
 
