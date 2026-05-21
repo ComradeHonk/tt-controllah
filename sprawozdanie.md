@@ -284,6 +284,26 @@ d) maksymalny czas realizacji: do kilkunastu sekund<br>
 - Przypisanie spotkań do stołów i godzin,
 - Możliwość dalszego zarządzania turniejem.
 
+## 4.2. Diagramy czynności
+
+### 4.2.1. Diagram czynności „Rejestracja zawodnika do turnieju” *(autor: Marcel Alefierowicz)*
+
+### 4.2.2. Diagram czynności „Wprowadzanie i zatwierdzanie wyników meczów” *(autor: Michał Burzyński)*
+
+![Diagram czynności 2](./assets/activity_2_michal_dark.drawio.png)
+
+### 4.2.3. Diagram czynności „Generowanie harmonogramu meczów” *(autor: Przemysław Dudek)*
+
+## 4.3. Diagramy interakcji (przebiegu)
+
+### 4.3.1. Diagram interakcji „Rejestracja zawodnika do turnieju” *(autor: Marcel Alefierowicz)*
+
+### 4.3.2. Diagram interakcji „Wprowadzanie i zatwierdzanie wyników meczów” *(autor: Michał Burzyński)*
+
+![Diagram interakcji 2](./assets/sequence_2_michal_dark.drawio.png)
+
+### 4.3.3. Diagram interakcji „Generowanie harmonogramu meczów” *(autor: Przemysław Dudek)*
+
 # 5. Perspektywa projektowa
 ## 5.1 Diagram klas
 ![Diagram klas](./assets/class_diagram.png)
