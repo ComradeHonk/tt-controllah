@@ -25,8 +25,8 @@ Projekt na zajęcia z Inżynierii oprogramowania.
   - [x] 4.1. Diagramy przypadków użycia
     - [x] 4.1.1. Opisy tekstowe wszystkich aktorów
     - [x] 4.1.2. Opisy tekstowe wybranych przypadków użycia
-  - [ ] 4.2. Diagramy czynności
-  - [ ] 4.3. Diagramy interakcji (przebiegu) z opisem tekstowym komunikatów
+  - [x] 4.2. Diagramy czynności
+  - [x] 4.3. Diagramy interakcji (przebiegu) z opisem tekstowym komunikatów
 - [ ] 5. Perspektywa projektowa
   - [ ] 5.0. Proponowana architektura systemu wraz z opisem
   - [x] 5.1. Diagram klas
