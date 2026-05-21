@@ -21,7 +21,7 @@ Projekt na zajęcia z Inżynierii oprogramowania.
 - [x] 1. Treść zadania projektowego
 - [x] 2. Cel budowania systemu, jego zakres oraz kontekst, przewidywalne mierzalne i niemierzalne korzyści z jego wdrożenia
 - [x] 3. Słownik
-- [ ] 4. Perspektywa przypadków użycia
+- [x] 4. Perspektywa przypadków użycia
   - [x] 4.1. Diagramy przypadków użycia
     - [x] 4.1.1. Opisy tekstowe wszystkich aktorów
     - [x] 4.1.2. Opisy tekstowe wybranych przypadków użycia
