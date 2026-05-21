@@ -294,6 +294,8 @@ d) maksymalny czas realizacji: do kilkunastu sekund<br>
 
 ### 4.2.3. Diagram czynności „Generowanie harmonogramu meczów” *(autor: Przemysław Dudek)*
 
+![Diagram czynności 3](./assets/activity_3_przemek.jpg)
+
 ## 4.3. Diagramy interakcji (przebiegu)
 
 ### 4.3.1. Diagram interakcji „Rejestracja zawodnika do turnieju” *(autor: Marcel Alefierowicz)*
@@ -303,6 +305,8 @@ d) maksymalny czas realizacji: do kilkunastu sekund<br>
 ![Diagram interakcji 2](./assets/sequence_2_michal_dark.drawio.png)
 
 ### 4.3.3. Diagram interakcji „Generowanie harmonogramu meczów” *(autor: Przemysław Dudek)*
+
+![Diagram interakcji 3](./assets/sequence_3_przemek.jpg)
 
 # 5. Perspektywa projektowa
 ## 5.1 Diagram klas
