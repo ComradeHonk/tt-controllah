@@ -299,7 +299,7 @@ d) maksymalny czas realizacji: do kilkunastu sekund<br>
 ## 4.3. Diagramy interakcji (przebiegu)
 
 ### 4.3.1. Diagram interakcji „Rejestracja zawodnika do turnieju” *(autor: Marcel Alefierowicz)*
-
+![Diagram interakcji 1](./assets/flowchart_1_marcel_dark.drawio.png)
 ### 4.3.2. Diagram interakcji „Wprowadzanie i zatwierdzanie wyników meczów” *(autor: Michał Burzyński)*
 
 ![Diagram interakcji 2](./assets/sequence_2_michal_dark.drawio.png)
