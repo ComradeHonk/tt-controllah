@@ -578,10 +578,6 @@ Operacja dodająca powiadomienie do kolejki wysyłania.
 
 Operacja rozpoczynająca wysyłanie powiadomienia.
 
-`retrySending()`
-
-Operacja ponawiająca próbę wysłania powiadomienia po wcześniejszym błędzie.
-
 `openMessage()`
 
 Operacja oznaczająca odczytanie powiadomienia przez użytkownika.
