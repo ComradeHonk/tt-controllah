@@ -370,11 +370,11 @@ Klasa odpowiedzialna za reprezentację powiadomień wysyłanych do użytkownikó
 - `sendDate : DateTime` — data wysłania
 - `recipient : User` — odbiorca powiadomienia
 - `type : NotificationType` — typ powiadomienia
+- `status : NotificationStatus` - status powiadomienia
 
 **Metody:**
 
 - `sendNotification()` — wysyła powiadomienie
-- `generateMessage()` — tworzy treść komunikatu
 
 #### NotificationService
 
@@ -506,6 +506,8 @@ Klasa reprezentująca turniej tenisa stołowego.
 - `startTournament()` — rozpoczyna turniej
 - `finishTournament()` — kończy turniej
 - `generateBracket()` — generuje drabinkę turniejową
+- `openRegistration()` - otwiera rejestracje
+- `closeRegistration()` - zamyka rejestracje
 
 #### User
 
@@ -527,10 +529,73 @@ Klasa bazowa reprezentująca użytkownika systemu.
 - `login()` — logowanie użytkownika
 - `logout()` — wylogowanie użytkownika
 - `updateProfile()` — aktualizacja danych użytkownika
+- `openMessage()` - otwiera powiadomienie & oznacza je jako przeczytane
 
 ## 5.3. Diagramy stanów
 
-### 5.3.1. Diagram stanów dla klasy `Tournament` *(autor: Marcel Alefierowicz)*
+### 5.3.1. Diagram stanów dla klasy `Tournament` *(autor: Marcel Alefierowicz*
+
+![Diagram stanów 1](./assets/state_1_marcel_dark.drawio.png)
+
+#### **Opis elementów diagramu**
+
+**Stan początkowy**
+
+Stan oznaczający utworzenie obiektu turnieju w systemie.
+
+**Created**
+
+Stan początkowy turnieju po jego utworzeniu przez organizatora. Turniej istnieje w systemie, ale rejestracja zawodników nie została jeszcze rozpoczęta.
+
+**RegistrationOpen**
+
+Stan oznaczający otwartą rejestrację do turnieju. Zawodnicy mogą zapisywać się do rozgrywek.
+
+**RegistrationClosed**
+
+Stan, w którym zakończono możliwość rejestracji nowych uczestników. System przygotowuje dane do generowania harmonogramu i drabinki.
+
+**Scheduled**
+
+Stan oznaczający wygenerowanie harmonogramu meczów oraz przypisanie spotkań do stołów i godzin.
+
+**InProgress**
+
+Stan aktywnego turnieju. Mecze są rozgrywane, a wyniki aktualizowane w systemie.
+
+**Finished**
+
+Stan końcowy oznaczający zakończenie wszystkich meczów i całego turnieju.
+
+**Cancelled**
+
+Stan oznaczający anulowanie turnieju przed jego zakończeniem.
+
+#### **Opis przejść między stanami**
+
+`openRegistration()`
+
+Operacja otwierająca rejestrację zawodników do turnieju.
+
+`closeRegistration()`
+
+Operacja kończąca proces rejestracji uczestników.
+
+`generateSchedule()`
+
+Operacja generująca harmonogram i przygotowująca turniej do rozpoczęcia.
+
+`startTournament()`
+
+Operacja rozpoczynająca rozgrywki turniejowe.
+
+`finishTournament()`
+
+Operacja kończąca turniej po rozegraniu wszystkich meczów.
+
+`cancelTournament()`
+
+Operacja anulująca turniej niezależnie od aktualnego etapu przygotowania.
 
 ### 5.3.2. Diagram stanów dla klasy `Match` *(autor: Przemysław Dudek)*
 
