@@ -527,5 +527,64 @@ Klasa bazowa reprezentująca użytkownika systemu.
 - `login()` — logowanie użytkownika
 - `logout()` — wylogowanie użytkownika
 - `updateProfile()` — aktualizacja danych użytkownika
+
+## 5.3. Diagramy stanów
+
+### 5.3.1. Diagram stanów dla klasy `Tournament` *(autor: Marcel Alefierowicz)*
+
+### 5.3.2. Diagram stanów dla klasy `Match` *(autor: Przemysław Dudek)*
+
+### 5.3.3. Diagram stanów dla klasy `Notification` *(autor: Michał Burzyński)*
+
+![Diagram stanów 3](./assets/state_3_michal_dark.drawio.png)
+
+#### **Opis elementów diagramu**
+
+**Stan początkowy**
+
+Stan oznaczający utworzenie nowego powiadomienia.
+
+**Created**
+
+Stan nowo utworzonego powiadomienia oczekującego na dodanie do kolejki wysyłania.
+
+**Queued**
+
+Stan oznaczający umieszczenie powiadomienia w kolejce do wysłania.
+
+**Sending**
+
+Stan aktywnego procesu wysyłania wiadomości do użytkownika.
+
+**Sent**
+
+Stan oznaczający poprawne dostarczenie powiadomienia.
+
+**Failed**
+
+Stan oznaczający niepowodzenie procesu wysyłki.
+
+**Read**
+
+Stan oznaczający odczytanie powiadomienia przez użytkownika.
+
+#### **Opis przejść między stanami**
+
+`queueNotification()`
+
+Operacja dodająca powiadomienie do kolejki wysyłania.
+
+`sendNotification()`
+
+Operacja rozpoczynająca wysyłanie powiadomienia.
+
+`retrySending()`
+
+Operacja ponawiająca próbę wysłania powiadomienia po wcześniejszym błędzie.
+
+`openMessage()`
+
+Operacja oznaczająca odczytanie powiadomienia przez użytkownika.
+
 ## 5.4. Propozycje interfejsu użytkownika
 **Link do wygenerowanej strony:** [Bolt.new](https://table-tennis-tournam-feqg.bolt.host/)
