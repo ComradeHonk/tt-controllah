@@ -31,7 +31,7 @@ Projekt na zajęcia z Inżynierii oprogramowania.
   - [ ] 5.0. Proponowana architektura systemu wraz z opisem
   - [x] 5.1. Diagram klas
   - [x] 5.2. Uporządkowany alfabetycznie wykaz wszystkich klas
-  - [ ] 5.3. Diagramy stanów wraz z opisem tekstowym występującym na nich elementów
+  - [x] 5.3. Diagramy stanów wraz z opisem tekstowym występującym na nich elementów
   - [x] 5.4. Propozycje interfejsu użytkownika
 - [ ] 6. Wymagania niefunkcjonalne dla systemu
   - [ ] 6.1. Oszacowanie wielkości bazy danych
