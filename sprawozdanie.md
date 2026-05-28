@@ -598,6 +598,63 @@ Operacja kończąca turniej po rozegraniu wszystkich meczów.
 Operacja anulująca turniej niezależnie od aktualnego etapu przygotowania.
 
 ### 5.3.2. Diagram stanów dla klasy `Match` *(autor: Przemysław Dudek)*
+![Diagram stanów 2](./assets/state_2_przemek.drawio.png)
+
+#### **Opis elementów diagramu**
+
+**Stan początkowy**
+
+Stan oznaczający utworzenie nowego meczu.
+
+**Planned**
+
+Stan nowo utworzonego meczu oczekującego na przypisanie stolika.
+
+**Assigned**
+
+Stan oznaczający przypisanie stolika do meczu i czekający na potwierdzenie.
+
+**Ready**
+
+Stan gotowego meczu czekającego na rozpoczęcie.
+
+**InProgress**
+
+Stan oznaczający mecz w trakcie.
+
+**Finished**
+
+Stan oznaczający zakończony mecz.
+
+**Approved**
+
+Stan oznaczający zakończony mecz wraz z wynikami.
+
+**Cancelled**
+
+Stan oznaczający przerwanie meczu.
+
+#### **Opis przejść między stanami**
+
+`assignTable()`
+
+Operacja przypisująca stolik do gry.
+
+`startMatch()`
+
+Operacja rozpoczynająca mecz zamieniając stan w InProgress.
+
+`finishMatch()`
+
+Operacja kończąca mecz.
+
+`updateScore()`
+
+Operacja aktualizająca wynik. Doprowadza do stanu Approved.
+
+`cancelMatch()`
+
+Operacja usuwająca mecz na etapie planowania oraz przypisywania.
 
 ### 5.3.3. Diagram stanów dla klasy `Notification` *(autor: Michał Burzyński)*
 
