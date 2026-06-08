@@ -10,7 +10,7 @@ Projekt na zajęcia z Inżynierii oprogramowania.
 
 **Sprawozdanie projektowe:** [sprawozdanie.md](sprawozdanie.md)
 
-**Propozycja interfejsu użytkownika:** [Bolt.new](https://table-tennis-tournam-feqg.bolt.host/)
+**Propozycja interfejsu użytkownika:** [TT-Controllah UI](https://gregarious-quokka-a74d68.netlify.app/)
 
 ## Postęp pracy
 

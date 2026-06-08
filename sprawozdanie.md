@@ -705,4 +705,4 @@ Operacja rozpoczynająca wysyłanie powiadomienia.
 Operacja oznaczająca odczytanie powiadomienia przez użytkownika.
 
 ## 5.4. Propozycje interfejsu użytkownika
-**Link do wygenerowanej strony:** [Bolt.new](https://table-tennis-tournam-feqg.bolt.host/)
+**Link do wygenerowanej strony:** [TT-Controllah UI](https://gregarious-quokka-a74d68.netlify.app/)
