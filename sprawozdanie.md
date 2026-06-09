@@ -931,3 +931,127 @@ Odpowiada za:
     * system powiadomień,
     * interfejs użytkownika,
     * kompletna dokumentacja końcowa.
+
+# 9. Analiza ryzyka projektu
+
+## Ryzyko 1 – Błędne generowanie harmonogramu meczów
+
+| Parametr           | Wartość |
+| ------------------ | ------- |
+| Prawdopodobieństwo | Średnie |
+| Szkodliwość        | Duża    |
+
+**Metody zapobiegania**
+
+- testowanie algorytmów harmonogramowania,
+- walidacja wygenerowanych harmonogramów,
+- wykorzystanie przykładowych scenariuszy turniejowych.
+
+**Plan awaryjny**
+
+- umożliwienie ręcznej korekty harmonogramu przez organizatora,
+- ponowne wygenerowanie harmonogramu po poprawie danych wejściowych.
+
+## Ryzyko 2 – Nieprawidłowa aktualizacja drabinki po wprowadzeniu wyniku
+
+| Parametr           | Wartość |
+| ------------------ | ------- |
+| Prawdopodobieństwo | Średnie |
+| Szkodliwość        | Duża    |
+
+**Metody zapobiegania**
+
+- automatyczne testy logiki turniejowej,
+- dodatkowa walidacja wyników przed zapisaniem.
+
+**Plan awaryjny**
+
+- możliwość cofnięcia ostatniej operacji,
+- ręczna korekta drabinki przez organizatora.
+
+## Ryzyko 3 – Utrata połączenia internetowego podczas zawodów
+
+| Parametr           | Wartość |
+| ------------------ | ------- |
+| Prawdopodobieństwo | Średnie |
+| Szkodliwość        | Duża    |
+
+**Metody zapobiegania**
+
+- zapewnienie zapasowego łącza internetowego,
+- monitorowanie jakości połączenia.
+
+**Plan awaryjny**
+
+- przejście na zapasowe łącze,
+- czasowe prowadzenie wyników lokalnie i późniejsza synchronizacja.
+
+## Ryzyko 4 – Wprowadzenie błędnego wyniku przez sędziego
+
+| Parametr           | Wartość |
+| ------------------ | ------- |
+| Prawdopodobieństwo | Duże    |
+| Szkodliwość        | Średnia |
+
+**Metody zapobiegania**
+
+- potwierdzanie wyniku przed zapisaniem,
+- ograniczenia dotyczące formatu wyniku.
+
+**Plan awaryjny**
+
+- możliwość edycji lub anulowania wyniku przez uprawnionego użytkownika,
+- zapis historii zmian.
+
+## Ryzyko 5 – Przeciążenie systemu podczas dużego turnieju
+
+| Parametr           | Wartość |
+| ------------------ | ------- |
+| Prawdopodobieństwo | Małe    |
+| Szkodliwość        | Duża    |
+
+**Metody zapobiegania**
+
+- testy wydajnościowe,
+- optymalizacja zapytań do bazy danych,
+- odpowiednia konfiguracja serwera.
+
+**Plan awaryjny**
+
+- ograniczenie liczby jednoczesnych operacji administracyjnych,
+- zwiększenie zasobów serwera.
+
+## Ryzyko 6 – Niedostarczenie powiadomień do użytkowników
+
+| Parametr           | Wartość |
+| ------------------ | ------- |
+| Prawdopodobieństwo | Średnie |
+| Szkodliwość        | Średnia |
+
+**Metody zapobiegania**
+
+- monitorowanie usług e-mail/SMS,
+- ponawianie nieudanych prób wysyłki.
+
+**Plan awaryjny**
+
+- publikacja informacji bezpośrednio w systemie,
+- ponowne wysłanie komunikatów po usunięciu problemu.
+
+## Ryzyko 7 – Utrata danych wskutek awarii systemu
+
+| Parametr           | Wartość     |
+| ------------------ | ----------- |
+| Prawdopodobieństwo | Małe        |
+| Szkodliwość        | Bardzo duża |
+
+**Metody zapobiegania**
+
+- regularne kopie zapasowe,
+- replikacja bazy danych,
+- monitorowanie infrastruktury.
+
+**Plan awaryjny**
+
+- odtworzenie systemu z najnowszej kopii zapasowej,
+- weryfikacja poprawności odzyskanych danych.
