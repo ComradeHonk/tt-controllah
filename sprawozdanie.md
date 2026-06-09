@@ -311,6 +311,24 @@ d) maksymalny czas realizacji: do kilkunastu sekund<br>
 ![Diagram interakcji 3](./assets/sequence_3_przemek.jpg)
 
 # 5. Perspektywa projektowa
+## 5.0 Proponowana architektura systemu - diagram komponentów
+
+![Diagram komponentów](./assets/component_diag.drawio.png)
+
+**Opis:**
+
+Diagram przedstawia podział systemu na podsystemy odpowiadające spójnym grupom klas z diagramu klas.
+
+- `Accounts` - realizuje pochodne klasy `User`: `Organizer`, `Player`, `Referee`. Odpowiada za logowanie, profile & role użytkowników. 
+    - Udostępnia `IAccounts`.
+- `Tournaments` - realizuje klasy `Tournament`, `Schedule`, `Bracket`, `Table`. Obsługuje konfigurację turnieju, rejestrację zawodników, harmonogram, drabinkę i przydział stołów. 
+    - Udostępnia `ITournaments`.
+- `Matches` — realizuje klasę `Match` (oraz enum `MatchStatus`) i obsługę wyników wprowadzanych przez sędziego. Zależy od `Tournaments`, bo zatwierdzenie wyniku aktualizuje drabinkę i zwalnia stół.
+    - Udostępnia `IMatches`.
+- `NotificationService` — realizuje klasy `NotificationService` i `Notification` (wraz z enumami `NotificationType`, `NotificationStatus`). Kolejkuje i wysyła powiadomienia; jest wykorzystywany przez `Tournaments` i `Matches`, a sam wymaga interfejsu `ISend` od zewnętrznych bramek `SMS Gateway` i `E-Mail gateway`.
+- `tt-database` — wspólna warstwa trwałości; 
+    - udostępnia `IData`, z którego korzystają wszystkie cztery moduły backendu.
+    
 ## 5.1 Diagram klas
 ![Diagram klas](./assets/class_diagram.png)
 
