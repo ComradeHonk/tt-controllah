@@ -33,12 +33,12 @@ Projekt na zajęcia z Inżynierii oprogramowania.
   - [x] 5.2. Uporządkowany alfabetycznie wykaz wszystkich klas
   - [x] 5.3. Diagramy stanów wraz z opisem tekstowym występującym na nich elementów
   - [x] 5.4. Propozycje interfejsu użytkownika
-- [ ] 6. Wymagania niefunkcjonalne dla systemu
-  - [ ] 6.1. Oszacowanie wielkości bazy danych
-  - [ ] 6.2. Propozycja wymaganych czasów odpowiedzi
-  - [ ] 6.3. Oszacowanie ilości i typów potrzebnych stanowisk pracy użytkowników systemu 
+- [x] 6. Wymagania niefunkcjonalne dla systemu
+  - [x] 6.1. Oszacowanie wielkości bazy danych
+  - [x] 6.2. Propozycja wymaganych czasów odpowiedzi
+  - [x] 6.3. Oszacowanie ilości i typów potrzebnych stanowisk pracy użytkowników systemu 
 - [ ] 7. Propozycja technologii informatycznych, które mogą zostać wykorzystane do realizacji systemu
 - [x] 8. Propozycja planu pracy
-- [ ] 9. Analiza ryzyka projektu zawierająca wykaz przewidywanych zagrożeń
+- [x] 9. Analiza ryzyka projektu zawierająca wykaz przewidywanych zagrożeń
 - [ ] 10. Kosztorys realizacji przedsięwzięcia
 - [ ] Dodatek A. Przebieg (terminowość) prac zespołu
