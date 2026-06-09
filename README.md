@@ -37,7 +37,7 @@ Projekt na zajęcia z Inżynierii oprogramowania.
   - [x] 6.1. Oszacowanie wielkości bazy danych
   - [x] 6.2. Propozycja wymaganych czasów odpowiedzi
   - [x] 6.3. Oszacowanie ilości i typów potrzebnych stanowisk pracy użytkowników systemu 
-- [ ] 7. Propozycja technologii informatycznych, które mogą zostać wykorzystane do realizacji systemu
+- [x] 7. Propozycja technologii informatycznych, które mogą zostać wykorzystane do realizacji systemu
 - [x] 8. Propozycja planu pracy
 - [x] 9. Analiza ryzyka projektu zawierająca wykaz przewidywanych zagrożeń
 - [ ] 10. Kosztorys realizacji przedsięwzięcia

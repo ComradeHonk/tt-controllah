@@ -328,7 +328,7 @@ Diagram przedstawia podział systemu na podsystemy odpowiadające spójnym grupo
 - `NotificationService` — realizuje klasy `NotificationService` i `Notification` (wraz z enumami `NotificationType`, `NotificationStatus`). Kolejkuje i wysyła powiadomienia; jest wykorzystywany przez `Tournaments` i `Matches`, a sam wymaga interfejsu `ISend` od zewnętrznych bramek `SMS Gateway` i `E-Mail gateway`.
 - `tt-database` — wspólna warstwa trwałości; 
     - udostępnia `IData`, z którego korzystają wszystkie cztery moduły backendu.
-    
+
 ## 5.1 Diagram klas
 ![Diagram klas](./assets/class_diagram.png)
 
@@ -828,6 +828,9 @@ Zakres obowiązków:
 - System powinien umożliwiać obsługę co najmniej 500 zawodników w ramach jednego turnieju.
 - System powinien umożliwiać równoczesną pracę minimum 100 użytkowników.
 - Architektura systemu powinna umożliwiać łatwe rozszerzanie o nowe typy rozgrywek.
+
+# 7. Propozycja technologii informatycznych użytych do realizacji systemu - diagram wdrożenia
+![Diagram Wdrożenia](./assets/deployment_diag.drawio.png)
 
 # 8. Propozycja planu pracy
 
