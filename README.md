@@ -38,7 +38,7 @@ Projekt na zajęcia z Inżynierii oprogramowania.
   - [ ] 6.2. Propozycja wymaganych czasów odpowiedzi
   - [ ] 6.3. Oszacowanie ilości i typów potrzebnych stanowisk pracy użytkowników systemu 
 - [ ] 7. Propozycja technologii informatycznych, które mogą zostać wykorzystane do realizacji systemu
-- [ ] 8. Propozycja planu pracy
+- [x] 8. Propozycja planu pracy
 - [ ] 9. Analiza ryzyka projektu zawierająca wykaz przewidywanych zagrożeń
 - [ ] 10. Kosztorys realizacji przedsięwzięcia
 - [ ] Dodatek A. Przebieg (terminowość) prac zespołu

@@ -772,7 +772,7 @@ Integracja może rozpocząć się dopiero po zakończeniu implementacji wszystki
 
 Testowanie przeprowadzane jest na zintegrowanej wersji systemu.
 
-**E9 → E10*
+**E9 → E10**
 
 Dokumentacja końcowa powstaje po zakończeniu testów i wprowadzeniu niezbędnych poprawek.
 
