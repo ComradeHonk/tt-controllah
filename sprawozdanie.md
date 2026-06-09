@@ -705,4 +705,126 @@ Operacja rozpoczynająca wysyłanie powiadomienia.
 Operacja oznaczająca odczytanie powiadomienia przez użytkownika.
 
 ## 5.4. Propozycje interfejsu użytkownika
+
 **Link do wygenerowanej strony:** [TT-Controllah UI](https://gregarious-quokka-a74d68.netlify.app/)
+
+# 8. Propozycja planu pracy
+
+## 8.1. Zakładany zespół projektowy
+
+| Zasób | Rola                    |
+| ----- | ----------------------- |
+| A1    | Analityk systemowy      |
+| A2    | Programista backend     |
+| A3    | Programista frontend    |
+| A4    | Tester / Specjalista QA |
+
+## 8.2. Podział projektu na etapy
+
+| ID  | Etap                                                                                | Czas trwania (dni robocze) | Zależności | Przydzielone zasoby |
+| --- | ----------------------------------------------------------------------------------- | -------------------------- | ---------- | ------------------- |
+| E1  | Analiza wymagań i specyfikacja systemu                                              | 4                          | brak       | A1                  |
+| E2  | Projektowanie UML (diagram przypadków użycia, klas, aktywności, sekwencji i stanów) | 5                          | E1         | A1                  |
+| E3  | Projekt bazy danych                                                                 | 3                          | E2         | A2                  |
+| E4  | Implementacja modułu zarządzania turniejem (turnieje, zawodnicy, drabinki)          | 6                          | E3         | A2                  |
+| E5  | Implementacja modułu harmonogramowania i zarządzania meczami                        | 5                          | E4         | A2                  |
+| E6  | Implementacja interfejsu użytkownika                                                | 6                          | E4         | A3                  |
+| E7  | Implementacja systemu powiadomień                                                   | 3                          | E5         | A2                  |
+| E8  | Integracja komponentów systemu                                                      | 3                          | E5, E6, E7 | A2, A3              |
+| E9  | Testowanie i usuwanie błędów                                                        | 4                          | E8         | A4                  |
+| E10 | Dokumentacja końcowa i zamknięcie projektu                                          | 2                          | E9         | A1                  |
+
+## 8.3. Diagram Gantta
+
+![Diagram Gantta](./assets/gantt_dark.drawio.png)
+
+## 8.4. Opis zależności pomiędzy etapami
+
+**E1 → E2**
+
+Przed rozpoczęciem projektowania UML konieczne jest zakończenie analizy wymagań oraz określenie funkcjonalności systemu.
+
+**E2 → E3**
+
+Projekt bazy danych jest tworzony na podstawie modelu klas oraz relacji zidentyfikowanych podczas projektowania UML.
+
+**E3 → E4**
+
+Implementacja głównych funkcjonalności systemu wymaga wcześniej przygotowanej struktury bazy danych.
+
+**E4 → E5**
+
+Moduł harmonogramowania wykorzystuje dane o turniejach, zawodnikach i drabinkach, dlatego może zostać rozpoczęty dopiero po ukończeniu modułu zarządzania turniejem.
+
+**E4 → E6**
+
+Interfejs użytkownika wymaga znajomości funkcjonalności dostępnych w warstwie biznesowej systemu.
+
+**E5 → E7**
+
+Powiadomienia są generowane na podstawie harmonogramu meczów i zmian w przebiegu turnieju.
+
+**E5, E6, E7 → E8**
+
+Integracja może rozpocząć się dopiero po zakończeniu implementacji wszystkich głównych komponentów systemu.
+
+**E8 → E9**
+
+Testowanie przeprowadzane jest na zintegrowanej wersji systemu.
+
+**E9 → E10*
+
+Dokumentacja końcowa powstaje po zakończeniu testów i wprowadzeniu niezbędnych poprawek.
+
+## 8.5. Alokacja zasobów ludzkich
+
+### A1 – Analityk systemowy
+
+Odpowiada za:
+
+- analizę wymagań,
+- przygotowanie dokumentacji projektowej,
+- opracowanie diagramów UML,
+- przygotowanie dokumentacji końcowej.
+
+### A2 – Programista backend
+
+Odpowiada za:
+
+- projekt bazy danych,
+- implementację logiki biznesowej,
+- implementację modułu harmonogramowania,
+- implementację systemu powiadomień,
+- integrację komponentów.
+
+### A3 – Programista frontend
+
+Odpowiada za:
+
+- implementację interfejsu użytkownika,
+- przygotowanie widoków dla organizatora, zawodnika i sędziego,
+- współpracę przy integracji systemu.
+
+### A4 – Tester / Specjalista QA
+
+Odpowiada za:
+
+- przygotowanie scenariuszy testowych,
+- testowanie funkcjonalne systemu,
+- raportowanie błędów,
+- weryfikację poprawności działania po wdrożeniu poprawek.
+
+## 8.6. Podsumowanie
+
+- Liczba etapów: 10
+- Łączny nakład pracy: 41 osobodni
+- Szacowany czas realizacji projektu: około 35 dni roboczych
+- Główne produkty projektu:
+    * dokumentacja wymagań,
+    * model UML,
+    * baza danych,
+    * moduł zarządzania turniejami,
+    * moduł harmonogramowania,
+    * system powiadomień,
+    * interfejs użytkownika,
+    * kompletna dokumentacja końcowa.
