@@ -708,6 +708,109 @@ Operacja oznaczająca odczytanie powiadomienia przez użytkownika.
 
 **Link do wygenerowanej strony:** [TT-Controllah UI](https://gregarious-quokka-a74d68.netlify.app/)
 
+# 6. Wymagania niefunkcjonalne systemu
+
+## 6.1. Oszacowanie wielkości bazy danych
+
+Przyjęto następujące założenia:
+
+- do 500 zawodników na turniej,
+- około 1000 rozegranych meczów rocznie,
+- przechowywanie danych przez minimum 5 lat,
+- rejestracja wyników, harmonogramów i powiadomień.
+
+| Rodzaj danych | Szacowana liczba rekordów |
+| ------------- | ------------------------- |
+| Zawodnicy     | 2 500                     |
+| Turnieje      | 250                       |
+| Mecze         | 5 000                     |
+| Wyniki        | 5 000                     |
+| Powiadomienia | 50 000                    |
+
+Szacowana wielkość bazy danych:
+
+- dane operacyjne: ok. 50–100 MB,
+- logi systemowe: ok. 100 MB,
+- rezerwa na rozwój systemu: ok. 300 MB.
+
+**Łączna rekomendowana wielkość bazy danych: około 500 MB.**
+
+## 6.2. Propozycja wymaganych czasów odpowiedzi
+
+| Operacja                                      | Maksymalny czas odpowiedzi |
+| --------------------------------------------- | -------------------------- |
+| Logowanie użytkownika                         | 2 s                        |
+| Wyświetlenie harmonogramu                     | 2 s                        |
+| Wyświetlenie wyników                          | 2 s                        |
+| Rejestracja zawodnika                         | 3 s                        |
+| Wprowadzenie wyniku meczu                     | 2 s                        |
+| Aktualizacja drabinki po zatwierdzeniu wyniku | 3 s                        |
+| Generowanie harmonogramu                      | 10 s                       |
+| Generowanie raportu końcowego                 | 15 s                       |
+
+## 6.3. Oszacowanie liczby i typów potrzebnych stanowisk pracy użytkowników systemu
+
+### Organizatorzy
+
+- liczba stanowisk: 1–3
+- typ stanowiska: komputer lub laptop z przeglądarką internetową
+
+Zakres obowiązków:
+
+- tworzenie turniejów,
+- zarządzanie harmonogramem,
+- nadzór nad przebiegiem zawodów.
+
+### Sędziowie
+
+- liczba stanowisk: 2–10
+- typ stanowiska: tablet lub smartfon
+
+Zakres obowiązków:
+
+- wprowadzanie wyników meczów,
+- zatwierdzanie wyników.
+
+### Zawodnicy
+
+- liczba użytkowników: do 500
+- typ stanowiska: smartfon, tablet lub komputer
+
+Zakres wykorzystania:
+
+- przegląd harmonogramu,
+- sprawdzanie wyników,
+- odbieranie powiadomień.
+
+### Administrator systemu
+
+- liczba stanowisk: 1
+
+Zakres obowiązków:
+
+- utrzymanie systemu,
+- wykonywanie kopii zapasowych,
+- usuwanie awarii.
+
+## 6.4. Dostępność systemu
+
+- System powinien być dostępny przez co najmniej 99% czasu trwania zawodów.
+- W przypadku awarii system powinien umożliwiać odtworzenie danych z ostatniej kopii zapasowej.
+- System powinien działać na komputerach stacjonarnych, laptopach, tabletach oraz smartfonach.
+
+## 6.5. Bezpieczeństwo
+
+- Dostęp do funkcji administracyjnych wyłącznie dla uprawnionych użytkowników.
+- Hasła użytkowników powinny być przechowywane w postaci zaszyfrowanej.
+- Komunikacja z systemem powinna odbywać się z wykorzystaniem protokołu HTTPS.
+- System powinien prowadzić rejestr najważniejszych operacji (logi systemowe).
+
+## 6.6. Skalowalność
+
+- System powinien umożliwiać obsługę co najmniej 500 zawodników w ramach jednego turnieju.
+- System powinien umożliwiać równoczesną pracę minimum 100 użytkowników.
+- Architektura systemu powinna umożliwiać łatwe rozszerzanie o nowe typy rozgrywek.
+
 # 8. Propozycja planu pracy
 
 ## 8.1. Zakładany zespół projektowy
