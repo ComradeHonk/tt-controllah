@@ -27,8 +27,8 @@ Projekt na zajęcia z Inżynierii oprogramowania.
     - [x] 4.1.2. Opisy tekstowe wybranych przypadków użycia
   - [x] 4.2. Diagramy czynności
   - [x] 4.3. Diagramy interakcji (przebiegu) z opisem tekstowym komunikatów
-- [ ] 5. Perspektywa projektowa
-  - [ ] 5.0. Proponowana architektura systemu wraz z opisem
+- [x] 5. Perspektywa projektowa
+  - [x] 5.0. Proponowana architektura systemu wraz z opisem
   - [x] 5.1. Diagram klas
   - [x] 5.2. Uporządkowany alfabetycznie wykaz wszystkich klas
   - [x] 5.3. Diagramy stanów wraz z opisem tekstowym występującym na nich elementów
