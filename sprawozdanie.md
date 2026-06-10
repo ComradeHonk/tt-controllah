@@ -324,14 +324,88 @@ d) maksymalny czas realizacji: do kilkunastu sekund<br>
 ## 4.3. Diagramy interakcji (przebiegu)
 
 ### 4.3.1. Diagram interakcji „Rejestracja zawodnika do turnieju” *(autor: Marcel Alefierowicz)*
+
 ![Diagram interakcji 1](./assets/flowchart_1_marcel_dark.drawio.png)
+
+#### **Opis komunikatów**
+
+**`registerForTournament()`**
+- Inicjuje proces rejestracji zawodnika do wybranego turnieju. Przekazuje dane zawodnika oraz identyfikator turnieju.
+
+**`addPlayer()`**
+- Dodaje zawodnika do listy uczestników turnieju po pozytywnej weryfikacji danych.
+
+**Walidacja danych użytkownika**
+- Sprawdźa poprawność i kompletność danych wprowadzonych przez zawodnika.
+
+**Sprawdzenie limitu miejsc**
+- Sprawdza, czy w wybranym turnieju są jeszcze dostępne miejsca dla nowych uczestników.
+
+**`generateMessage()`**
+- Tworzy treść powiadomienia potwierdzającego poprawną rejestrację zawodnika.
+
+**`sendEmail()`**
+- Wysyła wiadomość e-mail z potwierdzeniem rejestracji.
+
 ### 4.3.2. Diagram interakcji „Wprowadzanie i zatwierdzanie wyników meczów” *(autor: Michał Burzyński)*
 
 ![Diagram interakcji 2](./assets/sequence_2_michal_dark.drawio.png)
 
+#### **Opis komunikatów**
+
+**`viewAssignedMatches()`**
+- Pobiera i wyświetla listę meczów przypisanych do danego sędziego.
+
+**`enterMatchResult()`**
+- Inicjuje proces wprowadzania wyniku wybranego meczu.
+
+**`updateScore()`**
+- Zapisuje wprowadzony wynik meczu w obiekcie meczu.
+
+**`approveResult()`**
+- Zatwierdza wynik meczu jako oficjalny rezultat spotkania.
+
+**`finishMatch()`**
+- Zmienia status meczu na zakończony po zatwierdzeniu wyniku.
+
+**`updateBracket()`**
+- Akualizuje drabinkę turniejową na podstawie wyniku zakończonego meczu.
+
+**`finishTournament()`**
+- Sprawdza, czy turniej został zakończony oraz aktualizuje jego status.
+
+**`generateMessage()`**
+- Tworzy treść powiadomień o zakończonym meczu i nowych wynikach.
+
+**`notifyPlayers()`**
+- Odpowiada za wysłanie powiadomień do zawodników o zmianach w turnieju.
+
 ### 4.3.3. Diagram interakcji „Generowanie harmonogramu meczów” *(autor: Przemysław Dudek)*
 
 ![Diagram interakcji 3](./assets/sequence_3_przemek.jpg)
+
+#### **Opis komunikatów**
+
+**`generateSchedule()`**
+- Inicjuje proces automatycznego tworzenia harmonogramu meczów.
+
+**`generateBracket()`**
+- Generuje lub pobiera aktualną strukturę drabinki turniejowej.
+
+**`getMatches()`**
+- Odpowiada za pobranie listy meczów wymagających zaplanowania.
+
+**`checkAvailability()`**
+- Analizuje dostępność stołów oraz przedziałów czasowych dla meczów.
+
+**`assignMatchesToTables()`**
+- Przypisuje mecze do odpowiednich stołów i godzin rozgrywek.
+
+**`assignTable()`**
+- Zapisuje przypisanie konkretnego stołu do danego meczu.
+
+**`updateSchedule()`**
+- Aktualizuje harmonogram po zakończeniu procesu planowania.
 
 # 5. Perspektywa projektowa
 ## 5.0 Proponowana architektura systemu - diagram komponentów
