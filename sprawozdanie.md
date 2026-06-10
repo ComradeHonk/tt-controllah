@@ -5,6 +5,29 @@
 
 **Repozytorium GitHub:** [tt-controllah](https://github.com/ComradeHonk/tt-controllahh)
 
+## 0. Podział pracy
+
+### 0.1. Według historii commitów
+
+| Marcel Alefierowicz               | Przemysław Dudek                      | Michał Burzyński          |
+| --------------------------------- | ------------------------------------- | ------------------------- |
+| Metryczka i treść zadania         | **Propozycja interfejsu użytkownika** | Opis zakresu              |
+| Opis celu wdrożenia projektu      | jw.                                   | Słownik pojęć             |
+| Korzyści mierzalne i niemierzalne | jw.                                   | Opisy aktorów             |
+| Diagram przypadków użycia         | Opis przypadku użycia                 | Opis przypadku użycia     |
+| Opis przypadku użycia             | Diagram klas                          | Diagram czynności         |
+| Diagram czynności                 | Wykaz klas                            | Diagram przbiegu          |
+| Diagram przebiegu                 | Diagram czynności                     | Diagram stanów            |
+| Diagram stanów                    | Diagram przebiegu                     | Propozycja planu pracy    |
+| Diagram komponentów               | Diagram stanów                        | Wymagania niefunkcjonalne |
+| Diagram wdrożenia                 | Kosztorys                             | Analiza ryzyka            |
+
+### 0.2. Procentowy
+
+| Marcel Alefierowicz | Przemysław Dudek | Michał Burzyński |
+| ------------------- | ---------------- | ---------------- |
+| 34%                 | 33%              | 33%              |
+
 # 1. Treść zadania
 
 Celem projektu jest zaprojektowanie systemu informatycznego wspierającego organizację zawodów w tenisa stołowego. System ma usprawnić proces zarządzania turniejami poprzez automatyzację planowania rozgrywek, obsługi uczestników oraz publikacji wyników.
