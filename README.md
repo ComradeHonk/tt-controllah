@@ -14,9 +14,9 @@ Projekt na zajęcia z Inżynierii oprogramowania.
 
 ## Postęp pracy
 
-- [ ] 0. Metryczka
-  - [ ] 0.1. Skład zespołu i podział pracy pomiędzy poszczególnych uczestników zespołu
-  - [ ] 0.2. Proponowana punktacja
+- [x] 0. Metryczka
+  - [x] 0.1. Skład zespołu i podział pracy pomiędzy poszczególnych uczestników zespołu
+  - [x] 0.2. Proponowana punktacja
   - [x] 0.3. Adres (publiczny) repozytorium projektu; informacje niezbędne do uzyskania dostępu
 - [x] 1. Treść zadania projektowego
 - [x] 2. Cel budowania systemu, jego zakres oraz kontekst, przewidywalne mierzalne i niemierzalne korzyści z jego wdrożenia
@@ -40,5 +40,5 @@ Projekt na zajęcia z Inżynierii oprogramowania.
 - [x] 7. Propozycja technologii informatycznych, które mogą zostać wykorzystane do realizacji systemu
 - [x] 8. Propozycja planu pracy
 - [x] 9. Analiza ryzyka projektu zawierająca wykaz przewidywanych zagrożeń
-- [ ] 10. Kosztorys realizacji przedsięwzięcia
+- [x] 10. Kosztorys realizacji przedsięwzięcia
 - [ ] Dodatek A. Przebieg (terminowość) prac zespołu
