@@ -1076,3 +1076,154 @@ Odpowiada za:
 
 - odtworzenie systemu z najnowszej kopii zapasowej,
 - weryfikacja poprawności odzyskanych danych.
+
+# 10. Kosztorys realizacji przedsięwzięcia 
+
+## Warianty
+
+| | **Wariant A – Podstawowy** | **Wariant B – Komercyjny** |
+|---|---|---|
+| Przeznaczenie | Akademicki / klub / non-profit | Produkcja / federacja |
+| Stack | Spring Boot, React, PostgreSQL, VPS | Mikroserwisy, React Native, AWS/Azure |
+| Aplikacja mobilna | Brak (RWD) | PWA / React Native |
+| Testy bezpieczeństwa | Wewnętrzne | Zewnętrzny audyt penetracyjny |
+| Stawka roboczogodziny | 80 PLN/rbh | 150 PLN/rbh |
+| **Netto** | **47 350 PLN** | **168 200 PLN** |
+| VAT 23% | 10 890 PLN | 38 686 PLN |
+| **Brutto** | **58 240 PLN** | **206 886 PLN** |
+
+---
+
+## Kosztorys szczegółowy
+
+### Etap 1 — Projekt i analiza
+
+| Pozycja | rbh | A (PLN) | B (PLN) |
+|---|---:|---:|---:|
+| Analiza wymagań, dokumentacja SRS | 40 | 3 200 | 6 000 |
+| Projekt architektury systemu | 30/40 | 2 400 | 6 000 |
+| Projekt bazy danych, diagramy ERD | 16/20 | 1 280 | 3 000 |
+| Konsultacje / warsztaty wymagań | 4/8 godz. | 800 | 2 400 |
+| **Suma** | | **7 680** | **17 400** |
+
+### Etap 2 — Implementacja
+
+| Moduł | rbh A / B | A (PLN) | B (PLN) |
+|---|---:|---:|---:|
+| Użytkownicy i autoryzacja | 40 / 50 | 3 200 | 7 500 |
+| Zarządzanie turniejem + stany | 50 / 60 | 4 000 | 9 000 |
+| Silnik drabinki (pucharowa, grupowa, seeding) | 60 / 80 | 4 800 | 12 000 |
+| Silnik harmonogramu (auto-scheduling) | 50 / 70 | 4 000 | 10 500 |
+| Wyniki + real-time (SSE / WebSocket) | 40 / 50 | 3 200 | 7 500 |
+| Powiadomienia (e-mail, SMS) | 24 / 30 | 1 920 | 4 500 |
+| Raporty końcowe + eksport | 16 / 24 | 1 280 | 3 600 |
+| Interfejs webowy RWD | 60 / 80 | 4 800 | 12 000 |
+| Aplikacja mobilna | — / 80 | — | 12 000 |
+| **Suma** | | **27 200** | **78 600** |
+
+### Etap 3 — Testowanie
+
+| Pozycja | | A (PLN) | B (PLN) |
+|---|---|---:|---:|
+| Testy jednostkowe i integracyjne | 40 / 60 rbh | 3 200 | 9 000 |
+| Audyt bezpieczeństwa / pen-testy | — / 1 komplet | — | 5 000 |
+| Testy akceptacyjne UAT | 12 / 16 rbh | 960 | 2 400 |
+| **Suma** | | **4 160** | **16 400** |
+
+### Etap 4 — Oprogramowanie i infrastruktura
+
+| Pozycja | | A (PLN) | B (PLN) |
+|---|---|---:|---:|
+| Licencje (open-source / komercyjne) | | 0 | 2 400 |
+| Hosting (VPS 12 mc / AWS-Azure 12 mc) | | 720 | 4 800 |
+| Domena + SSL | | 150 | 400 |
+| E-mail transakcyjny (SendGrid Free / Pro) | | 0 | 1 200 |
+| SMS (Twilio, 12 mc) | | 540 | 1 200 |
+| **Suma** | | **1 410** | **10 000** |
+
+### Etap 5 — Wdrożenie
+
+| Pozycja | rbh A / B | A (PLN) | B (PLN) |
+|---|---:|---:|---:|
+| Konfiguracja serwera, CI/CD | 16 / 40 | 1 280 | 6 000 |
+| Migracja danych, środowisko prod. | 8 / 16 | 640 | 2 400 |
+| Pilotaż (turniej testowy) | 1 / 2 dni | 400 | 2 000 |
+| **Suma** | | **2 320** | **10 400** |
+
+### Etap 6 — Szkolenia
+
+| Pozycja | | A (PLN) | B (PLN) |
+|---|---|---:|---:|
+| Szkolenie organizatorów (online) | 2 sesje | 400 | 1 600 |
+| Szkolenie sędziów (online) | 2 / 4 sesje | 300 | 1 600 |
+| Dokumentacja użytkownika | 1 komplet | 400 | 3 000 |
+| **Suma** | | **1 100** | **6 200** |
+
+### Etap 7 — Konsultacje i utrzymanie
+
+| Pozycja | | A (PLN) | B (PLN) |
+|---|---|---:|---:|
+| Nadzór autorski po wdrożeniu | 6 / 12 mc | 1 800 | 9 600 |
+| SLA (czas reakcji 4h) | — / 1 rok | — | 4 000 |
+| Pula godzin konsultacyjnych | 20 / 40 rbh | 1 600 | 6 000 |
+| **Suma** | | **3 400** | **19 600** |
+
+---
+
+## Podsumowanie kosztów
+
+| Etap | Wariant A | Wariant B |
+|---|---:|---:|
+| 1. Projekt i analiza | 7 680 | 17 400 |
+| 2. Implementacja | 27 200 | 78 600 |
+| 3. Testowanie | 4 160 | 16 400 |
+| 4. Oprogramowanie / infrastruktura | 1 410 | 10 000 |
+| 5. Wdrożenie | 2 320 | 10 400 |
+| 6. Szkolenia | 1 100 | 6 200 |
+| 7. Konsultacje i utrzymanie | 3 400 | 19 600 |
+| **Netto** | **47 270 PLN** | **158 600 PLN** |
+| VAT 23% | 10 872 PLN | 36 478 PLN |
+| **Brutto** | **58 142 PLN** | **195 078 PLN** |
+
+---
+
+## Warunki płatności
+
+Płatność w 5 transzach, faktura VAT w ciągu 7 dni od odbioru etapu, termin płatności 14 dni.
+
+| # | Kamień milowy | % | Wariant A | Wariant B |
+|---|---|---:|---:|---:|
+| 1 | Podpisanie umowy (zaliczka) | 20% | 9 454 PLN | 31 720 PLN |
+| 2 | Odbiór dokumentacji projektowej | 15% | 7 090 PLN | 23 790 PLN |
+| 3 | Odbiór implementacji (demo systemu) | 30% | 14 181 PLN | 47 580 PLN |
+| 4 | Odbiór testów i wdrożenia (protokół) | 25% | 11 817 PLN | 39 650 PLN |
+| 5 | Przekazanie dokumentacji i szkoleń | 10% | 4 727 PLN | 15 860 PLN |
+| * | Etap 7 — rozliczany miesięcznie | — | 300 PLN/mc | 800 PLN/mc |
+
+
+
+---
+
+## Sposób odbioru
+
+| Etap | Kryteria | Dokument | Tydzień |
+|---|---|---|---:|
+| 1 | Zaakceptowana dokumentacja SRS + architektura | Protokół odbioru dokumentacji | 4 |
+| 2 | Demo systemu, wszystkie moduły uruchomione, P1=0 | Protokół odbioru implementacji | 16 |
+| 3 | Pokrycie testami ≥80%, brak krytycznych defektów | Raport QA + protokół UAT | 20 |
+| 4 | System na produkcji, turniej pilotażowy | Protokół wdrożenia | 22 |
+| 5 | Szkolenia zakończone, repozytorium i dokumentacja przekazane | Protokół przekazania | 24 |
+
+Zamawiający ma **5 dni roboczych** od dostarczenia produktu na zgłoszenie uwag. Brak odpowiedzi = odbiór milczący.
+
+---
+
+## Wyłączenia z zakresu
+
+- Ponadlimitowe API (SMS, storage) — rozliczane wg. zużycia
+- Integracje z systemami zewnętrznymi (PZTS, ITTF rankingiem)
+- Fizyczne urządzenia (tablety, ekrany na hali)
+- Tłumaczenia interfejsu na języki obce
+
+---
+
