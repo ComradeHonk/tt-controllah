@@ -1077,153 +1077,179 @@ Odpowiada za:
 - odtworzenie systemu z najnowszej kopii zapasowej,
 - weryfikacja poprawności odzyskanych danych.
 
-# 10. Kosztorys realizacji przedsięwzięcia 
+# 10. Kosztorys realizacji przedsięwzięcia
 
-## Warianty
+## 10.1. Założenia ogólne
 
-| | **Wariant A – Podstawowy** | **Wariant B – Komercyjny** |
-|---|---|---|
-| Przeznaczenie | Akademicki / klub / non-profit | Produkcja / federacja |
-| Stack | Spring Boot, React, PostgreSQL, VPS | Mikroserwisy, React Native, AWS/Azure |
-| Aplikacja mobilna | Brak (RWD) | PWA / React Native |
-| Testy bezpieczeństwa | Wewnętrzne | Zewnętrzny audyt penetracyjny |
-| Stawka roboczogodziny | 80 PLN/rbh | 150 PLN/rbh |
-| **Netto** | **47 350 PLN** | **168 200 PLN** |
-| VAT 23% | 10 890 PLN | 38 686 PLN |
-| **Brutto** | **58 240 PLN** | **206 886 PLN** |
+- Projekt realizowany w modelu zespołowym (4 osoby)
+- Stawka roboczogodziny (szacunkowa): **80 PLN / godz.**
+- 1 dzień roboczy = 8 godzin
+- Łączny nakład pracy: **41 dni roboczych = 328 godzin / osoba**
+- Zespół: 4 osoby → **1312 godzin łącznie**
 
----
+## 10.2. Koszty według etapów projektu
 
-## Kosztorys szczegółowy
+### E1 – Analiza wymagań
 
-### Etap 1 — Projekt i analiza
+- Czas: **4 dni**
+- Koszt: 4 × 8 × 80 = **2 560 PLN**
+- Obejmuje: analiza, wymagania, konsultacje
 
-| Pozycja | rbh | A (PLN) | B (PLN) |
-|---|---:|---:|---:|
-| Analiza wymagań, dokumentacja SRS | 40 | 3 200 | 6 000 |
-| Projekt architektury systemu | 30/40 | 2 400 | 6 000 |
-| Projekt bazy danych, diagramy ERD | 16/20 | 1 280 | 3 000 |
-| Konsultacje / warsztaty wymagań | 4/8 godz. | 800 | 2 400 |
-| **Suma** | | **7 680** | **17 400** |
+### E2 – Projektowanie UML i architektury
 
-### Etap 2 — Implementacja
+- Czas: 5 dni
+- Koszt: **3 200 PLN**
+- Obejmuje:
+	* diagramy UML
+	* model klas
+	* model interakcji
 
-| Moduł | rbh A / B | A (PLN) | B (PLN) |
-|---|---:|---:|---:|
-| Użytkownicy i autoryzacja | 40 / 50 | 3 200 | 7 500 |
-| Zarządzanie turniejem + stany | 50 / 60 | 4 000 | 9 000 |
-| Silnik drabinki (pucharowa, grupowa, seeding) | 60 / 80 | 4 800 | 12 000 |
-| Silnik harmonogramu (auto-scheduling) | 50 / 70 | 4 000 | 10 500 |
-| Wyniki + real-time (SSE / WebSocket) | 40 / 50 | 3 200 | 7 500 |
-| Powiadomienia (e-mail, SMS) | 24 / 30 | 1 920 | 4 500 |
-| Raporty końcowe + eksport | 16 / 24 | 1 280 | 3 600 |
-| Interfejs webowy RWD | 60 / 80 | 4 800 | 12 000 |
-| Aplikacja mobilna | — / 80 | — | 12 000 |
-| **Suma** | | **27 200** | **78 600** |
+### E3 – Projekt bazy danych
 
-### Etap 3 — Testowanie
+- Czas: 3 dni
+- Koszt: **1 920 PLN**
+- Obejmuje:
+	* model ERD
+	* struktura danych
 
-| Pozycja | | A (PLN) | B (PLN) |
-|---|---|---:|---:|
-| Testy jednostkowe i integracyjne | 40 / 60 rbh | 3 200 | 9 000 |
-| Audyt bezpieczeństwa / pen-testy | — / 1 komplet | — | 5 000 |
-| Testy akceptacyjne UAT | 12 / 16 rbh | 960 | 2 400 |
-| **Suma** | | **4 160** | **16 400** |
+### E4 – Moduł zarządzania turniejem
 
-### Etap 4 — Oprogramowanie i infrastruktura
+- Czas: 6 dni
+- Koszt: **3 840 PLN**
+- Obejmuje:
+	* Tournament
+	* Player
+	* Bracket
 
-| Pozycja | | A (PLN) | B (PLN) |
-|---|---|---:|---:|
-| Licencje (open-source / komercyjne) | | 0 | 2 400 |
-| Hosting (VPS 12 mc / AWS-Azure 12 mc) | | 720 | 4 800 |
-| Domena + SSL | | 150 | 400 |
-| E-mail transakcyjny (SendGrid Free / Pro) | | 0 | 1 200 |
-| SMS (Twilio, 12 mc) | | 540 | 1 200 |
-| **Suma** | | **1 410** | **10 000** |
+### E5 – Moduł harmonogramowania i meczów
 
-### Etap 5 — Wdrożenie
+- Czas: 5 dni
+- Koszt: **3 200 PLN**
+- Obejmuje:
+	* Schedule
+	* Match logic
+	* Table assignment
 
-| Pozycja | rbh A / B | A (PLN) | B (PLN) |
-|---|---:|---:|---:|
-| Konfiguracja serwera, CI/CD | 16 / 40 | 1 280 | 6 000 |
-| Migracja danych, środowisko prod. | 8 / 16 | 640 | 2 400 |
-| Pilotaż (turniej testowy) | 1 / 2 dni | 400 | 2 000 |
-| **Suma** | | **2 320** | **10 400** |
+### E6 – Interfejs użytkownika
 
-### Etap 6 — Szkolenia
+- Czas: 6 dni
+- Koszt: **3 840 PLN**
+- Obejmuje:
+	* UI organizatora
+	* UI sędziego
+	* UI zawodnika
 
-| Pozycja | | A (PLN) | B (PLN) |
-|---|---|---:|---:|
-| Szkolenie organizatorów (online) | 2 sesje | 400 | 1 600 |
-| Szkolenie sędziów (online) | 2 / 4 sesje | 300 | 1 600 |
-| Dokumentacja użytkownika | 1 komplet | 400 | 3 000 |
-| **Suma** | | **1 100** | **6 200** |
+### E7 – System powiadomień
 
-### Etap 7 — Konsultacje i utrzymanie
+- Czas: 3 dni
+- Koszt: **1 920 PLN**
+- Obejmuje:
+	* NotificationService
+	* integracja e-mail/SMS
 
-| Pozycja | | A (PLN) | B (PLN) |
-|---|---|---:|---:|
-| Nadzór autorski po wdrożeniu | 6 / 12 mc | 1 800 | 9 600 |
-| SLA (czas reakcji 4h) | — / 1 rok | — | 4 000 |
-| Pula godzin konsultacyjnych | 20 / 40 rbh | 1 600 | 6 000 |
-| **Suma** | | **3 400** | **19 600** |
+### E8 – Integracja systemu
 
----
+- Czas: 3 dni
+- Koszt: **1 920 PLN**
+- Obejmuje:
+	* połączenie modułów
+	* testy integracyjne
 
-## Podsumowanie kosztów
+### E9 – Testowanie i QA
 
-| Etap | Wariant A | Wariant B |
-|---|---:|---:|
-| 1. Projekt i analiza | 7 680 | 17 400 |
-| 2. Implementacja | 27 200 | 78 600 |
-| 3. Testowanie | 4 160 | 16 400 |
-| 4. Oprogramowanie / infrastruktura | 1 410 | 10 000 |
-| 5. Wdrożenie | 2 320 | 10 400 |
-| 6. Szkolenia | 1 100 | 6 200 |
-| 7. Konsultacje i utrzymanie | 3 400 | 19 600 |
-| **Netto** | **47 270 PLN** | **158 600 PLN** |
-| VAT 23% | 10 872 PLN | 36 478 PLN |
-| **Brutto** | **58 142 PLN** | **195 078 PLN** |
+- Czas: 4 dni
+- Koszt: **2 560 PLN**
+- Obejmuje:
+	* testy funkcjonalne
+	* poprawki błędów
 
----
+### E10 – Dokumentacja i wdrożenie
 
-## Warunki płatności
+- Czas: 2 dni
+- Koszt: **1 280 PLN**
+- Obejmuje:
+	* dokumentacja końcowa
+	* przygotowanie wdrożenia
 
-Płatność w 5 transzach, faktura VAT w ciągu 7 dni od odbioru etapu, termin płatności 14 dni.
+## 10.3. Koszty dodatkowe
 
-| # | Kamień milowy | % | Wariant A | Wariant B |
-|---|---|---:|---:|---:|
-| 1 | Podpisanie umowy (zaliczka) | 20% | 9 454 PLN | 31 720 PLN |
-| 2 | Odbiór dokumentacji projektowej | 15% | 7 090 PLN | 23 790 PLN |
-| 3 | Odbiór implementacji (demo systemu) | 30% | 14 181 PLN | 47 580 PLN |
-| 4 | Odbiór testów i wdrożenia (protokół) | 25% | 11 817 PLN | 39 650 PLN |
-| 5 | Przekazanie dokumentacji i szkoleń | 10% | 4 727 PLN | 15 860 PLN |
-| * | Etap 7 — rozliczany miesięcznie | — | 300 PLN/mc | 800 PLN/mc |
+### Oprogramowanie i narzędzia
 
+- środowiska IDE, repozytorium, narzędzia UML: **500 PLN**
+- hosting / serwer testowy: **800 PLN**
 
+### Szkolenia użytkowników
 
----
+- szkolenie organizatorów i sędziów: **1 200 PLN**
+- materiały szkoleniowe: **400 PLN**
 
-## Sposób odbioru
+### Konsultacje techniczne
 
-| Etap | Kryteria | Dokument | Tydzień |
-|---|---|---|---:|
-| 1 | Zaakceptowana dokumentacja SRS + architektura | Protokół odbioru dokumentacji | 4 |
-| 2 | Demo systemu, wszystkie moduły uruchomione, P1=0 | Protokół odbioru implementacji | 16 |
-| 3 | Pokrycie testami ≥80%, brak krytycznych defektów | Raport QA + protokół UAT | 20 |
-| 4 | System na produkcji, turniej pilotażowy | Protokół wdrożenia | 22 |
-| 5 | Szkolenia zakończone, repozytorium i dokumentacja przekazane | Protokół przekazania | 24 |
+- konsultacje eksperckie (architektura, UML): **1 500 PLN**
 
-Zamawiający ma **5 dni roboczych** od dostarczenia produktu na zgłoszenie uwag. Brak odpowiedzi = odbiór milczący.
+### Wdrożenie systemu
 
----
+- instalacja, konfiguracja środowiska: **1 000 PLN**
 
-## Wyłączenia z zakresu
+## 10.4. Podsumowanie kosztów
 
-- Ponadlimitowe API (SMS, storage) — rozliczane wg. zużycia
-- Integracje z systemami zewnętrznymi (PZTS, ITTF rankingiem)
-- Fizyczne urządzenia (tablety, ekrany na hali)
-- Tłumaczenia interfejsu na języki obce
+| Kategoria                       | Koszt      |
+| ------------------------------- | ---------- |
+| Etapy E1–E10                    | 24 960 PLN |
+| Oprogramowanie i infrastruktura | 1 300 PLN  |
+| Szkolenia                       | 1 600 PLN  |
+| Konsultacje                     | 1 500 PLN  |
+| Wdrożenie                       | 1 000 PLN  |
 
----
+**Łączny koszt projektu: 30 360 PLN**
+
+## 10.5. Warianty kosztowe
+
+### Wariant podstawowy (MVP)
+
+- brak UI mobilnego
+- uproszczony system powiadomień (tylko e-mail)
+- brak zaawansowanego raportowania
+
+Koszt: **~22 000 PLN**
+
+### Wariant standardowy (rekomendowany)
+
+- pełna funkcjonalność systemu
+- e-mail + SMS
+- pełne UI dla wszystkich ról
+
+Koszt: **~30 000 PLN**
+
+### Wariant rozszerzony (premium)
+
+- skalowanie do wielu turniejów równoległych
+- zaawansowana analityka
+- panel administracyjny + monitoring
+
+Koszt: **~40 000–45 000 PLN**
+
+## 10.6. Warunki płatności i odbiór systemu
+
+### Warunki płatności
+
+- 30% zaliczki po podpisaniu umowy
+- 40% po zakończeniu implementacji modułów (E4–E7)
+- 20% po testach i integracji (E8–E9)
+- 10% po wdrożeniu i odbiorze końcowym
+
+### Sposób odbioru systemu
+
+Odbiór realizowany etapowo:
+
+1. Odbiór dokumentacji projektowej (UML, wymagania)
+2. Odbiór modułów funkcjonalnych
+3. Odbiór wersji testowej systemu
+4. Odbiór końcowy po wdrożeniu
+
+Każdy etap wymaga:
+
+- testów akceptacyjnych
+- protokołu odbioru
+- zatwierdzenia przez zamawiającego
 
