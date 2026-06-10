@@ -1350,3 +1350,6 @@ Każdy etap wymaga:
 - protokołu odbioru
 - zatwierdzenia przez zamawiającego
 
+# Dodatek A. Przebieg (terminowość) prac zespołu - wykres z historią commitów
+
+![Wykres z historią commitów](./assets/tt-controllah-git-history.png)
