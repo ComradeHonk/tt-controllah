@@ -41,4 +41,4 @@ Projekt na zajęcia z Inżynierii oprogramowania.
 - [x] 8. Propozycja planu pracy
 - [x] 9. Analiza ryzyka projektu zawierająca wykaz przewidywanych zagrożeń
 - [x] 10. Kosztorys realizacji przedsięwzięcia
-- [ ] Dodatek A. Przebieg (terminowość) prac zespołu
+- [x] Dodatek A. Przebieg (terminowość) prac zespołu
