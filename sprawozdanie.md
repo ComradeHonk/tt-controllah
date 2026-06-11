@@ -823,6 +823,23 @@ Operacja oznaczająca odczytanie powiadomienia przez użytkownika.
 
 **Link do wygenerowanej strony:** [TT-Controllah UI](https://gregarious-quokka-a74d68.netlify.app/)
 
+## 5.5. Przykładowe zrzuty ekranu interfejsu
+
+### 5.5.1 Widok głównego panelu
+![TT-Controllah UI screen1](./assets/screen1.png)
+
+### 5.5.2 Widok wygenerowanej drabinki turnieju
+![TT-Controllah UI screen2](./assets/screen2.png)
+
+### 5.5.3 Widok panelu z graczami
+![TT-Controllah UI screen3](./assets/screen3.png)
+
+### 5.5.4 Widok panelu z rankingami
+![TT-Controllah UI screen4](./assets/screen4.png)
+
+### 5.5.5 Widok wygenerowanego harmonogramu
+![TT-Controllah UI screen5](./assets/screen5.png)
+
 # 6. Wymagania niefunkcjonalne systemu
 
 ## 6.1. Oszacowanie wielkości bazy danych
