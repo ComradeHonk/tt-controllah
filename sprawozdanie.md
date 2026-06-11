@@ -311,7 +311,7 @@ d) maksymalny czas realizacji: do kilkunastu sekund<br>
 
 ### 4.2.1. Diagram czynności „Rejestracja zawodnika do turnieju” *(autor: Marcel Alefierowicz)*
 
-![Diagram czynności 1](/assets/activity_1_marcel_dark.drawio.png)
+![Diagram czynności 1](./assets/activity_1_marcel_dark.drawio.png)
 
 ### 4.2.2. Diagram czynności „Wprowadzanie i zatwierdzanie wyników meczów” *(autor: Michał Burzyński)*
 
@@ -648,7 +648,7 @@ Klasa bazowa reprezentująca użytkownika systemu.
 
 ## 5.3. Diagramy stanów
 
-### 5.3.1. Diagram stanów dla klasy `Tournament` *(autor: Marcel Alefierowicz*
+### 5.3.1. Diagram stanów dla klasy `Tournament` *(autor: Marcel Alefierowicz)*
 
 ![Diagram stanów 1](./assets/state_1_marcel_dark.drawio.png)
 
